@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "mocha": "1.x.x",
-    "should": "0.6.x",
+    "should": "git://github.com/visionmedia/should.js.git",
     "expect.js": "0.1.2",
     "benchmark": "0.3.x",
     "tinycolor": "0.x",
