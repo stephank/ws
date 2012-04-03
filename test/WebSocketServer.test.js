@@ -252,8 +252,8 @@ describe('WebSocketServer', function() {
       var srv = http.createServer();
       srv.listen(++port, function () {
         var wss = new WebSocketServer({noServer: true});
-        srv.on('upgrade', function(req, socket, upgradeHead) {
-          wss.handleUpgrade(req, socket, upgradeHead, function(client) {
+        srv.on('upgrade', function(req, res) {
+          wss.handleUpgrade(req, res, function(client) {
             client.send('hello');
           });
         });
